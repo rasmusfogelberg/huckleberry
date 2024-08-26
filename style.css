@@ -7,6 +7,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: hsl(0deg, 0%, 40%);
 }
 
 /* Add styles here! */
@@ -22,7 +23,6 @@ p {
   margin-bottom: 0;
 }
 
-
 strong {
   color: hsl(160deg, 100%, 30%);
 }
@@ -34,6 +34,7 @@ strong {
 
 header {
   padding: 96px 0 64px 0;
+  background-color: hsl(0, 0%, 100%);
   border-bottom: 8px solid hsl(0deg, 0%, 60%); 
 }
 
@@ -50,7 +51,7 @@ header p {
 }
 
 main {
-  background-color: hsl(0deg, 0%, 40%);
+ 
   padding: 72px 0 66px 0;
 }
 
