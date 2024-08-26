@@ -1,3 +1,27 @@
+/* Added variables as an experiment */
+:root {
+  --border-width: 8px;
+
+  /* Primary Color */
+  --color-primary: hsl(160deg, 100%, 30%);
+
+  /* Secondary Colors */
+  --color-secondary-light: hsl(45deg, 100%, 50%);
+  --color-secondary-dark: hsl(45deg, 100%, 40%);
+
+  /* Grays */
+  --color-black: hsl(0deg, 0%, 0%);
+  --color-gray-very-dark: hsl(0deg, 0%, 10%);
+  --color-gray-dark: hsl(0deg, 0%, 30%);
+  --color-gray-medium: hsl(0deg, 0%, 40%);
+  --color-gray-light: hsl(0deg, 0%, 60%);
+  --color-white: hsl(0deg, 0%, 100%);
+
+  /* Max widths */
+  --max-width-intro-p: 415px;
+  --max-width-content: 800px;
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
@@ -7,10 +31,8 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: hsl(0deg, 0%, 40%);
+  background-color: var(--color-gray-medium);
 }
-
-/* Add styles here! */
 
 p {
   font-size: 1.25rem;
@@ -24,49 +46,46 @@ p {
 }
 
 strong {
-  color: hsl(160deg, 100%, 30%);
+  color: var(--color-primary);
 }
 
 .max-width-wrapper {
-  max-width: 800;
+  max-width: var(--max-width-content);
   margin: auto;
 }
 
 header {
-  padding: 96px 0 64px 0;
-  background-color: hsl(0, 0%, 100%);
-  border-bottom: 8px solid hsl(0deg, 0%, 60%); 
+  padding: 6rem 0 4rem 0;
+  background-color: var(--color-white);
+  border-bottom: var(--border-width) solid var(--color-gray-light);
 }
 
-header .intro-chunk {
+header .max-width-wrapper .intro-chunk {
   padding: 0 1.5rem;
 }
 
-header .title {
+header .max-width-wrapper .intro-chunk .title {
   margin-bottom: 3rem;
 }
 
-header p {
-  max-width: 415px;
+header .max-width-wrapper .intro-chunk p {
+  max-width: var(--max-width-intro-p);
 }
 
 main {
- 
   padding: 72px 0 66px 0;
 }
 
-main .card {
-  background-color: white;
+main .max-width-wrapper .card {
+  background-color: var(--color-white);
   padding: 1.5rem;
-  max-width: 800px;
-  border-bottom: 8px solid hsl(0deg, 0%, 60%);
+  border-bottom: var(--border-width) solid var(--color-gray-light);
 }
 
-.indented-heading {
+main .max-width-wrapper .card .indented-heading {
   display: inline-block;
   padding: 1rem 2rem;
   margin: -1rem 0 0 -2rem;
-  background-color: hsl(45deg, 100%, 50%);
-  border-bottom: 8px solid hsl(45deg, 100%, 40%)
+  background-color: var(--color-secondary-light);
+  border-bottom: var(--border-width) solid var(--color-secondary-dark);
 }
-
